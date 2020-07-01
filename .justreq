@@ -1,0 +1,20 @@
+{
+  "host": "192.168.1.27/",
+  "port": 7777,
+  "cacheTime": "20m",
+  "cachePath": ".jr/cache/",
+  "substitutePath": "./mock",
+  "jrPort": 8031,
+  "proxyTimeout": "30s",
+  "rules": [
+    {
+      "url": ".+",
+      "keepFresh": true
+    },
+    { // sms接口配置
+      "url": "^/http://192.168.1.27:7777/",
+      "host": "192.168.1.27:7777/",
+      "port": 80
+    },
+  ]
+}

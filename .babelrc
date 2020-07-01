@@ -1,0 +1,33 @@
+{
+  "presets": ["env", "stage-0", "react"],
+  "plugins": [
+    [
+      "transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ],
+    "transform-class-properties",
+    "lazy-dynamic-import-webpack",
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "assets": "./src/assets",
+        "components": "./src/components",
+        "config": "./src/config",
+        "models": "./src/models",
+        "routes": "./src/routes",
+        "services": "./src/services",
+        "utils": "./src/utils",
+        "jspdf": "./node_modules/jspdf/dist/jspdf.min.js",
+      }
+    }],
+    
+  ],
+  "env": {
+    "development": {
+      "presets": ["react-hmre"]
+    }
+  }
+}

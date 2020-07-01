@@ -1,0 +1,140 @@
+html,
+body,
+textarea,
+p,
+div,
+span {
+  font-family: PingFang SC;
+}
+
+.tabHead {
+  width      : 750px;
+  position: absolute;
+  z-index: 1000;
+  // padding-top: 100px;
+
+  // height     : 100px;
+  // display    : flex;
+  // align-items: center;
+  // background : white;
+  // position   : fixed;
+  // top        : 0;
+  // z-index    : 999;
+  .kandianImgBox{
+    width: 362px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .kandianAdImg {
+    height     : 100px;
+    width      : 100%;
+    display    : flex;
+    align-items: center;
+    position   : relative;
+    top        : 0;
+    left       : 0;
+    z-index    : 999;
+    background : #fff;
+    transition: all 0.3s;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0,0);
+    &::after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      bottom: -1px;
+      left: 0px;
+      background: rgba(227,227,227,1);
+    }
+    :global {
+      img {
+        width : 262px;
+        height: 44px;
+        margin: 0 78px 0 30px;
+      }
+
+    }
+  }
+
+  .shawStyle{
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+  // .am-tabs-top {
+  //   height: 100px;
+  // }
+
+
+}
+
+:global {
+  #content {
+    margin-top: 100px;
+  }
+
+}
+
+:global {
+  .common-tab-head>.am-tabs {
+    position: absolute;
+    top     : 0;
+    right   : 0;
+    width   : 380px;
+    height  : 100px;
+    z-index : 999;
+
+    &>.am-tabs-tab-bar-wrap {
+      .am-tabs-default-bar-tab {
+        height       : 100px;
+        font-size    : 26px;
+        width        : auto !important;
+        margin-right : 30px;
+        padding      : 0 6px;
+        border-bottom: 0;
+        font-weight: 500;
+        &:after {
+          bottom: 10px!important;
+          background: #fff;
+        }
+
+
+
+      }
+
+      .am-tabs-default-bar-tab-active {
+        width: auto !important;
+        color: #4343FF !important;
+
+        &::after {
+          content                 : '';
+          position                : absolute;
+          background-color        : #4343FF !important;
+          display                 : block;
+          z-index                 : 1000;
+          top                     : auto;
+          right                   : auto;
+          bottom                  : 0;
+          left                    : 0;
+          width                   : 100%;
+          height                  : 5px !important;
+          transform: scaleY(1)!important;
+          border-radius: 5px;
+          // -webkit-transform-origin: 50% 100%;
+          // -ms-transform-origin    : 50% 100%;
+          // transform-origin        : 50% 100%;
+        }
+      }
+
+      .am-tabs-default-bar-underline {
+        width : 0 !important;
+        border: 0 !important;
+      }
+
+    }
+  }
+
+}

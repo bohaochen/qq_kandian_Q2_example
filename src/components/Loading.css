@@ -1,0 +1,73 @@
+
+.loadingPage {
+  width: 120px;
+  height: 80px;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 30%;
+  margin-left: -60px;
+  margin-top: -40px;
+}
+.fontS40{
+  color: rgb(113, 113, 113);
+  margin-top: 30px;
+  display: block;
+  position: relative;
+  top: 30%;
+  font-size: 30px;
+}
+
+.loadingPage span {
+  width: 10px;
+  height: 100%;
+  margin: 0px 6px;
+  display: inline-block;
+  background: #b3c4ff;
+  ;
+  animation: loadPage 1.2s infinite ease-in-out;
+  /*  
+		mymove代表动画名字
+		1.2s代表执行时间
+		infinite表示一直循环执行
+		ease-in-out表示先慢后快的缓动
+	*/
+}
+
+.loadingPage>span:nth-child(2) {
+  animation-delay: -1.0s;
+}
+
+.loadingPage>span:nth-child(3) {
+  animation-delay: -0.9s;
+}
+
+.loadingPage>span:nth-child(4) {
+  animation-delay: -0.8s;
+}
+
+.loadingPage>span:nth-child(5) {
+  animation-delay: -0.7s;
+}
+
+@keyframes loadPage {
+  0% {
+    transform: scaleY(0.4);
+  }
+
+  25% {
+    transform: scaleY(1.0);
+  }
+
+  50% {
+    transform: scaleY(0.4);
+  }
+
+  75% {
+    transform: scaleY(0.4);
+  }
+
+  100% {
+    transform: scaleY(0.4);
+  }
+}

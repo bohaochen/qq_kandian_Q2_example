@@ -1,0 +1,47 @@
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+html{
+  animation: showPage 1s normal ease-in-out;
+}
+
+#animateDiv{
+  width: 100%;
+  height: 100%;
+}
+
+
+@keyframes showPage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+div,p,a,span,h1,h2,h3,h4,h5,h6{
+  box-sizing: border-box;
+}
+
+.text-ellipsis{
+  overflow: hidden;    
+  text-overflow:ellipsis;    
+  white-space: nowrap;
+}
+
+.text-ellipsis-2{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.text-ellipsis-3{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}

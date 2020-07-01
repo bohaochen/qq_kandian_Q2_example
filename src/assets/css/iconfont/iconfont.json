@@ -1,0 +1,86 @@
+{
+  "id": "1795594",
+  "name": "tencent-kandian",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "14703254",
+      "name": "颜色填充 2 拷贝",
+      "font_class": "dianzan",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "14703255",
+      "name": "组 1",
+      "font_class": "blue-dianzan",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "14702950",
+      "name": "编组",
+      "font_class": "bianzu1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "14702951",
+      "name": "路径",
+      "font_class": "lujing",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "12754195",
+      "name": "右箭头",
+      "font_class": "youjiantou_huaban",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "14614343",
+      "name": "全屏图标",
+      "font_class": "bianzu",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "14523773",
+      "name": "top-arrow",
+      "font_class": "top-arrow",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "14523774",
+      "name": "right-arrow",
+      "font_class": "right-arrow",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "14456039",
+      "name": "up-arrow",
+      "font_class": "up-arrow",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "11347872",
+      "name": "check-circle",
+      "font_class": "check-circle",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "12593922",
+      "name": "down-arrow",
+      "font_class": "left-arrow",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    }
+  ]
+}
