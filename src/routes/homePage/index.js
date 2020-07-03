@@ -17,10 +17,9 @@ class App extends React.PureComponent {
   }
 
 
-  fullScreen() {
-  
+  play(index) {
     if(this.videoArr[0]){
-      this.targetVideo = this.videoArr[0]
+      this.targetVideo = this.videoArr[index]
       this.targetVideo.play()
     }
   }
@@ -41,34 +40,13 @@ class App extends React.PureComponent {
     const { banners } = this.props.homePage;
     console.log(banners, "banners")
     var videoName = "media1.MP4"
-    return <div className="content_box">
+    var videoImgName = "mediaImg1.png"
+    return <div className="content_box" style={{overflow:"auto"}}>
       
-      <div onClick={()=>{this.videoArr[0].play()}} >1233</div>
-      <div onClick={()=>{document.getElementById("myVideoOne").play()}} >2222</div>
-      <video
-                          id="myVideoOne"
-                          playsInline={true}
-                          controls={true}
-                           webkit-playsinline=""
-                           x5-video-player-type="h5"
-                          style={{ width: "100%", height: "100%", background: "rgba(0,0,0,0.3)" }}
-                          src={`${IMG_BASE}${videoName}`}
-                        ></video>
-      <VideoPlayer
-        {...{
-          fluid: true,
-          controls: false,
-          preload: true,
-          language: 'zh-CN', // 设置语言
-          // poster: `${IMG_BASE}${val.image.url}`,
-          sources: [{
-            src: `${IMG_BASE}${videoName}`
-          }],
-        }}
-        ref={(el) => { this.VideoPlayer = el; }}
-        playsInline={""}
-        onPlayerReady={this.saveVideoObj.bind(this)}
-      ></VideoPlayer>
+      <div onClick={this.play.bind(this,0)} 
+      style={{position:"absolute",top:"20px",left:"20px",color:"#fff"}}>21222</div>
+   
+    
       <ReactSwiper className="space-carousel"
         // frameOverflow="visible"
         // cellSpacing={30}
@@ -80,6 +58,7 @@ class App extends React.PureComponent {
         // afterChange={index => this.setState({ slideIndex: index })}
         // swiperClass={style.caseSwiper}
         // slideClass={style.swiperSlide}
+        swiperClass={style.caseSwiper}
         options={{
           slidesPerView: 'auto',
           spaceBetween: "8%",
@@ -95,7 +74,42 @@ class App extends React.PureComponent {
           },
         }}
       >
-       111
+       <VideoPlayer
+        {...{
+          fluid: true,
+          controls: false,
+          preload: true,
+          language: 'zh-CN', // 设置语言
+          poster: `${IMG_BASE}${videoImgName}`,
+          sources: [{
+            src: `${IMG_BASE}${videoName}`
+          }],
+        }}
+        ref={(el) => this.VideoPlayer = el}
+        style={{objectFit:"fill"}}
+        playsInline={""}
+        onPlayerReady={this.saveVideoObj.bind(this)}
+      ></VideoPlayer>
+     
+       <VideoPlayer
+        {...{
+          fluid: true,
+          controls: false,
+          preload: true,
+          language: 'zh-CN', // 设置语言
+          poster: `${IMG_BASE}${videoImgName}`,
+          sources: [{
+            src: `${IMG_BASE}${videoName}`
+          }],
+        }}
+        ref={(el) => this.VideoPlayer = el}
+        style={{objectFit:"fill"}}
+        playsInline={""}
+        onPlayerReady={this.saveVideoObj.bind(this)}
+      ></VideoPlayer>
+        <div style={{width:"100%",height:"100%",background:"red"}} >
+         asd
+       </div>
       </ReactSwiper>
 
     </div>
