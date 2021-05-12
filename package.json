@@ -20,7 +20,7 @@
     "qs": "^6.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "swiper": "^5.3.8",
+    "swiper": "^6.5.1",
     "video.js": "^7.7.5"
   },
   "devDependencies": {
